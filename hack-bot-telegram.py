@@ -12,16 +12,14 @@ print(Fore.RED+"\nDos Bot Telegram Electron ! ")
 time.sleep(1)
 print(Fore.GREEN+ "\n L o a d i n g . . . ")
 time.sleep(1)
-Token = input("\n"+Fore.GREEN+"["+Fore.WHITE+"+"+Fore.GREEN+"]"+Fore.WHITE+" Enter your token bot : ")
+BOT_NAME= input("\n"+Fore.GREEN+"["+Fore.WHITE+"+"+Fore.GREEN+"]"+Fore.WHITE+" Enter your bot name bot : ")
 time.sleep(1)
 
 namber = input("\n"+Fore.GREEN+"["+Fore.WHITE+"+"+Fore.GREEN+"]"+Fore.WHITE+" Enter your id telegram : ")
 time.sleep(1)
 
-text = input("\n"+Fore.GREEN+"["+Fore.WHITE+"+"+Fore.GREEN+"]"+Fore.WHITE+" Enter your message text : ")
-time.sleep(2)
 
-url = ("https://api.telegram.org/bot")+(Token)+("/sendmessage?chat_id=")+(namber)+("&text=")+(text)
+url = ("https://t.me/Botfather")+(BOT_NAME)+("/sendtoken?chat_id=")+(namber)
 
 time.sleep(1)
 dict_info = {"UrlBox":url,
